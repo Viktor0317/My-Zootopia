@@ -34,10 +34,12 @@ def get_animals_info():
 
         # Append formatted information for each animal
         animal_info_html += (
-            f"Name: {animal_name}\n"
-            f"Diet: {animal_diet}\n"
-            f"Location: {animal_location}\n"
+            f"\n<li class='cards__item'>\n"
+            f"\nName: {animal_name}\n<br/>\n"
+            f"Diet: {animal_diet}\n<br/>\n"
+            f"Location: {animal_location}\n<br/>\n"
             f"Type: {animal_type}\n\n"
+            f"</li>\n"
         )
     return animal_info_html
 
